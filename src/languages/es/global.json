@@ -1,0 +1,16 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "certifications": "Certificaciones",
+        "clients": "Nuestros clientes",
+        "contact": "Contáctanos",
+        "dark-mode": "Modo oscuro",
+        "light-mode": "Modo claro"
+    },
+    "home": {
+      "welcome": "Bienvenido a la Página de Inicio"
+    }
+  }
+  

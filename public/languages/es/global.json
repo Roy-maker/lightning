@@ -1,0 +1,33 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "certifications": "Certificaciones",
+        "clients": "Nuestros clientes",
+        "contact": "Contáctanos",
+        "dark-mode": "Modo oscuro",
+        "light-mode": "Modo claro",
+        "english": "English",
+        "spanish": "Español"
+    },
+    "home": {
+      "welcome": "Bienvenido a la Página de Inicio"
+    },
+    "services": {
+      "welcome": "Bienvenido a Servicios"
+    },
+    "projects": {
+      "welcome": "Bienvenido a Proyectos"
+    },
+    "certifications": {
+      "welcome": "Bienvenido a Certificaciones"
+    },
+    "clients": {
+      "welcome": "Bienvenido a Clientes"
+    },
+    "contact": {
+      "welcome": "Bienvenido a Contacto"
+    }
+  }
+  

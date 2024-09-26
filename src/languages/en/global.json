@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "certifications": "Certifications",
+        "clients": "Our clients",
+        "contact": "Contact",
+        "dark-mode": "Dark mode",
+        "light-mode": "Light mode"
+    },
+    "home": {
+      "welcome": "Welcome to the Home Page"
+    }
+  }
