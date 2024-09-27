@@ -3,12 +3,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--navbar-bg-color); 
-  color: var(--text-color); 
+  background-color: var(--navbar-bg-color);
+  color: var(--text-color);
+  position: relative;
+  height: 80px;
 }
 
 .navbar-logo img {
   width: 50px;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.hamburger-menu .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu .bar.open {
+  background-color: var(--navbar-item-hover-color);
 }
 
 .navbar-menu {
@@ -22,19 +45,19 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: var(--navbar-item-color); 
+  color: var(--navbar-item-color);
   padding: 10px;
-  background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-  background-color: var(--navbar-item-hover-bg); 
-  color: var(--navbar-item-hover-color); 
+  background-color: var(--navbar-item-hover-bg);
+  color: var(--navbar-item-hover-color);
 }
 
 .navbar-actions {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -42,10 +65,54 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text-color); 
+  color: var(--text-color);
   padding: 10px;
 }
 
 .navbar-actions button:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    height: 80px; 
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-actions {
+    order: 1; 
+    display: flex; 
+    gap: 10px;
+  }
+
+  .hamburger-menu {
+    order: 2; 
+  }
+
+  .navbar-menu {
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 80px; 
+    right: 0; 
+    width: auto;
+    background-color: var(--navbar-bg-color);
+    z-index: 10;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .navbar-menu.open {
+    display: flex; 
+  }
+
+  .navbar-menu li {
+    margin: 10px 0; 
+  }
 }
