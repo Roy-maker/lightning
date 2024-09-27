@@ -44,6 +44,7 @@
   --navbar-item-color: #333;
   --navbar-item-hover-bg: #ddd;
   --navbar-item-hover-color: #000;
+  --navbar-button-bg-color: #9f9f9f29;
 }
 
 [data-theme="dark"] {
@@ -53,6 +54,7 @@
   --navbar-item-color: #ccc;
   --navbar-item-hover-bg: #444;
   --navbar-item-hover-color: #fff;
+  --navbar-button-bg-color: #9f9f9f19;
 }
 
 body {

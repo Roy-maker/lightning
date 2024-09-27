@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon, faLanguage } from '@fortawesome/free-solid-svg-icons'; 
 import './css/navbar.css'
 import logo from '../images/logo.jpeg';
 
@@ -22,7 +24,9 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="Logo" width="50" />
+        <Link to="/home">
+          <img src={logo} alt="Logo" width="50" />
+        </Link>
       </div>
 
       <div className="hamburger-menu" onClick={toggleMenu}>
@@ -41,12 +45,12 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
       </ul>
       
       <div className={`navbar-actions ${menuOpen ? 'open' : ''}`}>
-        <button onClick={toggleTheme}>
-          {currentTheme === 'light' ? t('navbar.dark-mode') : t('navbar.light-mode')}
+      <button onClick={toggleTheme}>
+          <FontAwesomeIcon icon={currentTheme === 'light' ? faMoon : faSun} />
         </button>
 
         <button onClick={toggleLanguage}>
-          {language === 'en' ? t('navbar.spanish') : t('navbar.english')}
+          <FontAwesomeIcon icon={faLanguage} />
         </button>
       </div>
     </nav>

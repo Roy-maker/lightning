@@ -10,7 +10,7 @@
 }
 
 .navbar-logo img {
-  width: 50px;
+  width: 100px;
 }
 
 .hamburger-menu {
@@ -46,7 +46,9 @@
 .navbar-menu a {
   text-decoration: none;
   color: var(--navbar-item-color);
-  padding: 10px;
+  padding: 10px 15px;
+  background-color: var(--navbar-button-bg-color);
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
@@ -67,13 +69,14 @@
   cursor: pointer;
   color: var(--text-color);
   padding: 10px;
+  font-size: 1.5rem; 
 }
 
 .navbar-actions button:hover {
   opacity: 0.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between; 
@@ -83,12 +86,17 @@
 
   .hamburger-menu {
     display: flex;
+    order: 2;
   }
 
   .navbar-actions {
-    order: 1; 
-    display: flex; 
+    display: flex;
+    order: 1;
+    flex-direction: row; 
     gap: 10px;
+    position: relative;
+    right: 0;
+    margin-left: auto;
   }
 
   .hamburger-menu {
