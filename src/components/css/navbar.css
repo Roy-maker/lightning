@@ -1,43 +1,51 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--background-color); /* Cambia según el tema */
-    color: var(--text-color);
-  }
-  
-  .navbar-logo img {
-    width: 50px;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-  }
-  
-  .navbar-menu li {
-    margin: 0 15px;
-  }
-  
-  .navbar-menu a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  .navbar-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .navbar-actions button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: var(--text-color);
-  }
-  
-  .navbar-actions button:hover {
-    opacity: 0.7;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--navbar-bg-color); 
+  color: var(--text-color); 
+}
+
+.navbar-logo img {
+  width: 50px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: var(--navbar-item-color); 
+  padding: 10px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  background-color: var(--navbar-item-hover-bg); 
+  color: var(--navbar-item-hover-color); 
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color); 
+  padding: 10px;
+}
+
+.navbar-actions button:hover {
+  opacity: 0.7;
+}

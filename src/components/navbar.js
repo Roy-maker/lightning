@@ -7,7 +7,7 @@ import logo from '../images/logo.jpeg';
 const Navbar = ({ toggleTheme, currentTheme }) => {
   const { t, i18n } = useTranslation("global");
 
-  const [language, setLanguage] = useState(i18n.language); // Estado para almacenar el idioma actual
+  const [language, setLanguage] = useState(i18n.language); 
 
   const toggleLanguage = () => {
     const newLanguage = language === 'en' ? 'es' : 'en';
@@ -31,7 +31,6 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
       </ul>
 
       <div className="navbar-actions">
-        {/* Botón para cambiar entre modo oscuro y claro */}
         <button onClick={toggleTheme}>
           {currentTheme === 'light' ? t("navbar.dark-mode") : t("navbar.light-mode")}
         </button>

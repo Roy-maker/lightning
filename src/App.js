@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeContext } from './contexts/ThemeContext'; 
 import Navbar from './components/navbar'; 
@@ -14,8 +14,12 @@ import './App.css';
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext); 
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
-    <div className="App" id={theme}>
+    <div className="App">
       <Router>
         <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
 
