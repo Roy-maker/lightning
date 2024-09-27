@@ -27,7 +27,15 @@
       "welcome": "Bienvenido a Clientes"
     },
     "contact": {
-      "welcome": "Bienvenido a Contacto"
-    }
+      "title": "Información de contacto",
+      "contact_us": "Contáctanos",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send_message": "Enviar mensaje",
+      "phone": "Teléfono",
+      "follow_us": "Síguenos en"
+  }
   }
   

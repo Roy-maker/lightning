@@ -1,13 +1,14 @@
 import React, { useContext, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeContext } from './contexts/ThemeContext'; 
+import { ThemeContext } from './contexts/ThemeContext';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/navbar'; 
-import Home from './components/home';
-import Services from './components/services'; 
-import Projects from './components/projects'
-import Certifications from './components/certifications'
-import Clients from './components/clients'
-import Contact from './components/contact';
+import Home from './pages/home';
+import Services from './pages/services'; 
+import Projects from './pages/projects'
+import Certifications from './pages/certifications'
+import Clients from './pages/clients'
+import Contact from './pages/contact';
 
 import './App.css';
 

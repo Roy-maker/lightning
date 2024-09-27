@@ -27,6 +27,14 @@
       "welcome": "Welcome to Clients"
     },
     "contact": {
-      "welcome": "Welcome to Contact"
+      "title": "Contact Information",
+      "contact_us": "Contact Us",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send_message": "Send Message",
+      "phone": "Phone",
+      "follow_us": "Follow us on"
     }
   }
