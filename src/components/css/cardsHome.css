@@ -1,0 +1,8 @@
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: lightblue;
+    height: 15em;
+}
