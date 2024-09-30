@@ -1,3 +1,75 @@
-.cardStyle{
-    padding: 10px;
+.cardStyle {
+    height: 68vh;
+    width: calc(27%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Contenido de la Card */
+.cardContent {
+    padding: 20px;
+    color: #ffffff;
+    flex-grow: 1; /* El contenido crecerá para ocupar todo el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    justify-content: space-between; /* Mantiene el enlace abajo */
+}
+
+/* Título */
+.cardContent h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Texto */
+.cardContent p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px 0;
+    flex-grow: 1; /* El párrafo puede crecer si es necesario */
+}
+
+/* Botón */
+.cardContent a {
+    text-decoration: none;
+    color: white;
+    background-color: #0068D0;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    display: inline-block;
+    align-self: flex-start; /* Alinea el enlace al inicio horizontalmente */
+    margin-top: auto; /* Empuja el enlace hacia la parte inferior del contenedor */
+}
+
+/* Hover en el botón */
+.cardContent a:hover {
+    background-color: #004ba0;
+}
+
+/* Responsiveness para Pantallas Medianas */
+@media (max-width: 768px) {
+    .cardStyle {
+        width: calc(45%);
+    }
+}
+
+/* Responsiveness para Pantallas Pequeñas */
+@media (max-width: 480px) {
+    .cardStyle {
+        width: 100%;
+        height: auto;
+    }
 }

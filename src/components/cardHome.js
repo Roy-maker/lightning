@@ -1,15 +1,15 @@
 import React from 'react'
 import './css/cardHome.css'
+import img1 from '../images/logo.jpeg'
 
-function cardHome() {
+function cardHome({ title, content}) {
   return (
     <div className='cardStyle'>
-      IMG
-      {/* <img></img> */}
-      <div>
-        <h4>Card Title</h4>
+      <img src={img1} alt='' className="cardImage"></img>
+      <div className='cardContent'>
+        <h1>{title}</h1>
         <p>
-          Description
+          {content}
         </p>
         <a href='#!'>Go To Website</a>
       </div>
