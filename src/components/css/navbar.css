@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--navbar-bg-color);
+  background-color: var(--background-medium-color);
   color: var(--text-color);
   position: relative;
   height: 80px;
@@ -31,7 +31,7 @@
 }
 
 .hamburger-menu .bar.open {
-  background-color: var(--navbar-item-hover-color);
+  background-color: var(--background-darker-color);
 }
 
 .navbar-menu {
@@ -45,16 +45,16 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: var(--navbar-item-color);
+  color: var(--text-color);
   padding: 10px 15px;
-  background-color: var(--navbar-button-bg-color);
+  background-color: var(--button-bg);
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .navbar-menu a:hover {
-  background-color: var(--navbar-item-hover-bg);
-  color: var(--navbar-item-hover-color);
+  color: var(--text-color);
+  background-color: var(--button-hover-bg);
 }
 
 .navbar-actions {
@@ -110,7 +110,7 @@
     top: 80px; 
     right: 0; 
     width: auto;
-    background-color: var(--navbar-bg-color);
+    background-color: var(--background-dark-color);
     z-index: 10;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 

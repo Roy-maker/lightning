@@ -1,5 +1,5 @@
 .CardsContainer{
-    background-color: #001e44;
+    background-color: var(--blue-darkest);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

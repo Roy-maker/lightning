@@ -38,26 +38,125 @@
 }
 
 :root {
-  --background-color: white;
-  --text-color: black;
-  --navbar-bg-color: #f5f5f5;
-  --navbar-item-color: #333;
-  --navbar-item-hover-bg: #ddd;
-  --navbar-item-hover-color: #000;
-  --navbar-button-bg-color: #9f9f9f29;
+  --blue-darkest: #001e44;
+  --blue-darker: #002a66;
+  --blue-dark: #003366;
+  --blue-medium: #004a99;
+  --blue-light: #0068D0;
+  --blue-lighter: #5a9cf2;
+  --blue-lightest: #a2d9ff;
+
+  --purple-darkest: #2e004f;
+  --purple-darker: #4b0082;
+  --purple-dark: #6a0dad;
+  --purple-medium: #8a2be2;
+  --purple-light: #d3a8ff;
+  --purple-lighter: #e5c4ff;
+  --purple-lightest: #f3e5ff;
+
+  --gray-darkest: #1a1a1a;
+  --gray-darker: #333333;
+  --gray-dark: #666666;
+  --gray-medium: #999999;
+  --gray-light: #cccccc;
+  --gray-lighter: #e0e0e0;
+  --gray-lightest: #f5f5f5;
+
+  --white: white;
+
+  --bg-white-color: var(--white);
+  --bg-light-color: var(--gray-lightest);
+  --bg-medium-color: var(--gray-lighter);
+  --bg-dark-color: var(--gray-light);
+  --bg-darker-color: var(--gray-medium);
+  --bg-darkest-color: var(--gray-medium);
+
+  --text-color: var(--gray-darkest);
+  --medium-text-color: var(--gray-darkest);
+  --light-text-color: var(--white);
+
+
+  --link-color: var(--blue-medium);
+  --link-hover-color: var(--blue-lightest);
+
+  --button-bg: var(--gray-light);
+  --button-hover-bg: var(--gray-medium);
+
+  --button-dark-blue-bg: var(--blue-darker);
+  --button-dark-blue-hover-bg: var(--blue-medium);
+  --button-medium-blue-bg: var(--blue-dark);
+  --button-medium-blue-hover-bg: var(--blue-light);
+  --button-light-blue-bg: var(--blue-medium);
+  --button-light-blue-hover-bg: var(--blue-lighter);
+
+  --button-dark-purple-bg: var(--purple-darker);
+  --button-dark-purple-hover-bg: var(--purple-medium);
+  --button-medium-purple-bg: var(--purple-dark);
+  --button-medium-purple-hover-bg: var(--purple-light);
+  --button-light-purple-bg: var(--purple-medium);
+  --button-light-purple-hover-bg: var(--purple-lighter);
 }
 
 [data-theme="dark"] {
-  --background-color: #121212;
-  --text-color: #ffffffa0;
-  --navbar-bg-color: #333;
-  --navbar-item-color: #ccc;
-  --navbar-item-hover-bg: #444;
-  --navbar-item-hover-color: #fff;
-  --navbar-button-bg-color: #9f9f9f19;
+  --blue-darkest: #001e44;
+  --blue-darker: #00233d;
+  --blue-dark: #003366;
+  --blue-medium: #004680;
+  --blue-light: #005a99;
+  --blue-lighter: #0068D0;
+  --blue-lightest: #0068D0;
+
+  --purple-darkest: #2e004f;
+  --purple-darker: #3c0061;
+  --purple-dark: #4b0082;
+  --purple-medium: #6a0dad;
+  --purple-light: #8a2be2;
+  --purple-lighter: #c66df2;
+  --purple-lightest: #d3a8ff;
+
+  --gray-darkest: #1a1a1a;
+  --gray-darker: #2a2a2a;
+  --gray-dark: #3d3d3d;
+  --gray-medium: #666666;
+  --gray-light: #888888;
+  --gray-lighter: #aaaaaa;
+  --gray-lightest: #cccccc;
+
+  --white: #e0e0e0;
+
+  --background-white-color: var(--white);
+  --background-light-color: var(--gray-lightest);
+  --background-medium-color: var(--gray-lighter);
+  --background-dark-color: var(--gray-light);
+  --background-darker-color: var(--gray-medium);
+  --background-darkest-color: var(--gray-medium);
+
+  --text-color: var(--gray-darkest);
+  --medium-text-color: var(--gray-white);
+  --light-text-color: var(--white);
+  
+  --link-color: var(--blue-medium);
+  --link-hover-color: var(--blue-lightest);
+
+  --button-bg: var(--gray-light);
+  --button-hover-bg: var(--gray-medium);
+
+  --button-dark-blue-bg: var(--blue-darker);
+  --button-dark-blue-hover-bg: var(--blue-medium);
+  --button-medium-blue-bg: var(--blue-dark);
+  --button-medium-blue-hover-bg: var(--blue-light);
+  --button-light-blue-bg: var(--blue-medium);
+  --button-light-blue-hover-bg: var(--blue-lighter);
+
+  --button-dark-purple-bg: var(--purple-darker);
+  --button-dark-purple-hover-bg: var(--purple-medium);
+  --button-medium-purple-bg: var(--purple-dark);
+  --button-medium-purple-hover-bg: var(--purple-light);
+  --button-light-purple-bg: var(--purple-medium);
+  --button-light-purple-hover-bg: var(--purple-lighter);
 }
 
-body {
-  color: var(--text-color); 
-  background-color: var(--background-color);
+
+a:hover, button:hover {
+  font-weight: bold;
 }
