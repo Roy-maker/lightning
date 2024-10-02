@@ -1,0 +1,11 @@
+.sel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /* background-color: red; */
+}
+.sel img{
+    height: auto;
+    width: 27vw;
+}
