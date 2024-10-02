@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: var(--background-medium-color);
+    background-color: var(--bg-medium-color);
   }
   
   .contact-info {
     flex: 1;
     padding: 20px;
-    background-color: var(--background-light-color);
+    background-color: var(--bg-light-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -39,7 +39,7 @@
   .contact-form {
     flex: 1;
     padding: 20px;
-    background-color: var(--background-light-color);
+    background-color: var(--bg-light-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
@@ -62,8 +62,8 @@
   .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--background-darkest-color);
-    background-color: var(--background-white-color);
+    border: 1px solid var(--bg-darkest-color);
+    background-color: var(--bg-white-color);
     border-radius: 4px;
   }
   

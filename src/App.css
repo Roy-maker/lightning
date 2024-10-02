@@ -124,12 +124,12 @@
 
   --white: #e0e0e0;
 
-  --background-white-color: var(--white);
-  --background-light-color: var(--gray-lightest);
-  --background-medium-color: var(--gray-lighter);
-  --background-dark-color: var(--gray-light);
-  --background-darker-color: var(--gray-medium);
-  --background-darkest-color: var(--gray-medium);
+  --bg-white-color: var(--white);
+  --bg-light-color: var(--gray-lightest);
+  --bg-medium-color: var(--gray-lighter);
+  --bg-dark-color: var(--gray-light);
+  --bg-darker-color: var(--gray-medium);
+  --bg-darkest-color: var(--gray-medium);
 
   --text-color: var(--gray-darkest);
   --medium-text-color: var(--gray-white);
