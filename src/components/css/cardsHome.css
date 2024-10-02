@@ -1,0 +1,9 @@
+.CardsContainer{
+    background-color: #001e44;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
