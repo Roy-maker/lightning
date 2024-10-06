@@ -77,7 +77,7 @@
   background-color: var(--button-hover-bg);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1120px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between; 
