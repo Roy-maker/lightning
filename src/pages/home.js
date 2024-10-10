@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 import CardsHome from '../components/cardsHome';
-import CarouselProtect from '../components/carouselProtect';
+import CarouselProt from '../components/CarouselProt';
 
 
 const Home = () => {
@@ -11,7 +11,8 @@ const Home = () => {
     <div>
       <h1>{t("home.welcome")}</h1> 
       <CardsHome/>
-      <CarouselProtect/>
+      <h1>Protección Efectiva</h1>
+      <CarouselProt/>
     </div>
   );
 };
