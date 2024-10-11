@@ -5,6 +5,8 @@ import App from './App';
 import './i18n';
 import ThemeContextProvider from './contexts/ThemeContext';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
