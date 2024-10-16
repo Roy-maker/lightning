@@ -1,0 +1,30 @@
+.contact-info {
+    width: 80%;
+    flex: 1;
+    background-color: var(--bg-light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .social-media {
+    margin-top: 15px;
+  }
+  
+  .social-media a {
+    display: block;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: var(--button-blue-hover-bg);
+  }
