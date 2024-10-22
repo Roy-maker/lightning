@@ -34,10 +34,12 @@
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 5px;
     border: 1px solid var(--gray-dark);
     background-color: var(--bg-white-color);
     border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
 .form-group input:focus,

@@ -38,6 +38,11 @@
 }
 
 :root {
+
+  --font-family: 'Arial', sans-serif;
+  --font-size: 14px;
+  --font-size-subt: 18px;
+
   --blue-darkest: #001e44;
   --blue-darker: #002a66;
   --blue-dark: #003366;

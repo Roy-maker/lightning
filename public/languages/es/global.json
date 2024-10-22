@@ -38,7 +38,11 @@
       "message": "Mensaje",
       "send_message": "Enviar mensaje",
       "phone": "Teléfono",
-      "follow_us": "Síguenos en"
+      "follow_us": "Síguenos en",
+      "placeholder_name": "Su nombre completo",
+      "placeholder_email": "ejemplo@email.com",
+      "placeholder_subject": "Asunto del mensaje",
+      "placeholder_message": "Escriba notas, especificaciones, dudas o comentarios"
   }
   }
   

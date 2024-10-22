@@ -15,22 +15,33 @@
     background-color: var(--gray-dark);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
 }
 
 .contact-info h2 {
+    margin: 0 auto 30px auto;
+    width: 80%;
     color: var(--white);
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
 
 .contact-info p {
+    margin: 0 auto 15px auto;
+    width: 80%;
     color: var(--white);
-    margin: 15px 0;
+    text-align: left;
 }
 
 .social-media {
+    margin: 0 auto 15px auto;
+    width: 80%;
     margin-top: 15px;
+    text-align: left;
+}
+
+.social-media p {
+    margin: 0;
+    margin-top: 30px;
 }
 
 .social-media a {

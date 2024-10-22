@@ -37,6 +37,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            placeholder={t('contact.placeholder_name')}  // Placeholder traducido
             required
           />
         </div>
@@ -48,6 +49,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder={t('contact.placeholder_email')}  // Placeholder traducido
             required
           />
         </div>
@@ -59,6 +61,7 @@ const ContactForm = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
+            placeholder={t('contact.placeholder_subject')}  // Placeholder traducido
             required
           />
         </div>
@@ -70,6 +73,7 @@ const ContactForm = () => {
             rows="5"
             value={formData.message}
             onChange={handleChange}
+            placeholder={t('contact.placeholder_message')}  // Placeholder traducido
             required
           />
         </div>
