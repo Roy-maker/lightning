@@ -27,6 +27,9 @@
       "welcome": "Welcome to Clients"
     },
     "contact": {
+      "main_message": "We will answer your questions and provide you with the best protection against lightning.",
+      "form_title": "Contact Form",
+      "form_main_message": "Fill in the form and we will contact you as soon as possible.",
       "title": "Contact Information",
       "contact_us": "Contact Us",
       "name": "Name",
@@ -35,6 +38,10 @@
       "message": "Message",
       "send_message": "Send Message",
       "phone": "Phone",
-      "follow_us": "Follow us on"
+      "follow_us": "Follow us on",
+      "placeholder_name": "Your full name",
+      "placeholder_email": "example@email.com",
+      "placeholder_subject": "Subject of the message",
+      "placeholder_message": "Write notes, specifications, questions or comments"
     }
   }

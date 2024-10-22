@@ -27,15 +27,22 @@
       "welcome": "Bienvenido a Clientes"
     },
     "contact": {
+      "main_message": "Estamos aquí para responder a sus preguntas y proporcionarle la mejor protección contra rayos.",
+      "form_title": "Formulario de contacto",
+      "form_main_message": "Complete el formulario y nos pondremos en contacto con usted pronto.",
       "title": "Información de contacto",
-      "contact_us": "Contáctanos",
+      "contact_us": "Contáctenos",
       "name": "Nombre",
       "email": "Correo electrónico",
       "subject": "Asunto",
       "message": "Mensaje",
       "send_message": "Enviar mensaje",
       "phone": "Teléfono",
-      "follow_us": "Síguenos en"
+      "follow_us": "Síguenos en",
+      "placeholder_name": "Su nombre completo",
+      "placeholder_email": "ejemplo@email.com",
+      "placeholder_subject": "Asunto del mensaje",
+      "placeholder_message": "Escriba notas, especificaciones, dudas o comentarios"
   }
   }
   

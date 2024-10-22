@@ -1,88 +1,61 @@
+.contact-page {
+  background-color: var(--blue-darker);
+  min-height: calc(100vh - 80px);
+}
+
+.contact-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header h1 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+}
+
+.contact-header p {
+  color: var(--gray-medium);
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 600px; 
+  line-height: 1.5;
+  font-family: var(--font-family);
+  font-size: var(--font-size-subt);
+  font-weight: bold;
+}
+
 .contact-container {
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 60px;
+  background-color: var(--gray-darkest);
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-info-container {
+  width: 35%
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; 
     padding: 20px;
-    background-color: var(--bg-medium-color);
+    gap:60px;
   }
-  
-  .contact-info {
-    flex: 1;
-    padding: 20px;
-    background-color: var(--bg-light-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-info h2 {
-    margin-bottom: 15px;
-  }
-  
-  .contact-info p {
-    margin: 5px 0;
-  }
-  
-  .social-media {
-    margin-top: 15px;
-  }
-  
-  .social-media a {
-    display: block;
-    margin: 5px 0;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .social-media a:hover {
-    color: var(--button-blue-hover-bg);
-  }
-  
-  .contact-form {
-    flex: 1;
-    padding: 20px;
-    background-color: var(--bg-light-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 15px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
+
+  .contact-info-container, .contact-form {
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--bg-darkest-color);
-    background-color: var(--bg-white-color);
-    border-radius: 4px;
   }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  button {
-    background-color: var(--button-dark-blue-hover-bg);
-    color: var(--light-text-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: var(--button-dark-blue-bg);
-  }
-  
+}
