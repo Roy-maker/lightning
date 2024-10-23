@@ -18,10 +18,9 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Abre o cierra el menú
+    setMenuOpen(!menuOpen);
   };
 
-  // Nueva función para cerrar el menú al hacer clic en un enlace
   const closeMenu = () => {
     setMenuOpen(false);
   };

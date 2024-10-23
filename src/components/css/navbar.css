@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--bg-medium-color);
-  color: var(--text-color);
+  background-color: var(--gray-darker);
   position: relative;
   height: 80px;
 }
@@ -45,16 +44,18 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--light-text-color);
   padding: 10px 15px;
-  background-color: var(--button-bg);
+  background-color: var(--gray-dark);
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .navbar-menu a:hover {
   color: var(--text-color);
-  background-color: var(--button-hover-bg);
+  background-color: var(--gray-lighter);
+  font-weight: bolder;
 }
 
 .navbar-actions {
@@ -67,14 +68,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--light-text-color);
   padding: 10px;
   font-size: 1.5rem; 
-  background-color: var(--button-bg);
 }
 
 .navbar-actions button:hover {
-  background-color: var(--button-hover-bg);
+  background-color: var(--gray-lighter);
+  color: var(--text-color);
 }
 
 @media (max-width: 1120px) {
