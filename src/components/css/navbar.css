@@ -66,7 +66,7 @@
   color: var(--text-color);
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1180px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between; 
@@ -84,6 +84,7 @@
 
   .hamburger-menu.open {
     background-color: var(--gray-lighter);
+    border-radius: 5px 5px 0px 0px;
   }
   
   .hamburger-menu .bar {
@@ -120,7 +121,7 @@
     display: none; 
     flex-direction: column; 
     position: absolute;
-    top: 55px; 
+    top: 59px; 
     margin-right: 20px;
     right: 0; 
     width: auto;
