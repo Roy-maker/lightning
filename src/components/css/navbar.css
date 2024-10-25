@@ -24,13 +24,13 @@
 .hamburger-menu .bar {
   width: 100%;
   height: 3px;
-  background-color: var(--text-color);
+  background-color: var(--light-text-color);
   margin: 4px 0;
   transition: all 0.3s ease;
 }
 
 .hamburger-menu .bar.open {
-  background-color: var(--bg-darker-color);
+  background-color: var(--text-color);
 }
 
 .navbar-menu {
@@ -91,12 +91,15 @@
     display: flex;
     order: 2;
     padding: 10px 15px;
-    background-color: var(--button-bg);
     border-radius: 5px;
   }
 
   .hamburger-menu:hover{
-    background-color: var(--button-hover-bg);
+    background-color: var(--gray-lighter);
+  }
+
+  .hamburger-menu:hover .bar{
+    background-color: var(--text-color);
   }
 
   .navbar-actions {
