@@ -18,10 +18,9 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Abre o cierra el menú
+    setMenuOpen(!menuOpen);
   };
 
-  // Nueva función para cerrar el menú al hacer clic en un enlace
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -34,10 +33,10 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
         </Link>
       </div>
 
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
+      <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
 
       <ul className={`navbar-menu ${menuOpen ? 'open' : ''}`}>

@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--bg-medium-color);
-  color: var(--text-color);
+  background-color: var(--gray-darker);
   position: relative;
   height: 80px;
 }
@@ -22,18 +21,6 @@
   width: 30px;
 }
 
-.hamburger-menu .bar {
-  width: 100%;
-  height: 3px;
-  background-color: var(--text-color);
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-
-.hamburger-menu .bar.open {
-  background-color: var(--bg-darker-color);
-}
-
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -45,16 +32,18 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--light-text-color);
   padding: 10px 15px;
-  background-color: var(--button-bg);
+  background-color: var(--gray-dark);
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .navbar-menu a:hover {
   color: var(--text-color);
-  background-color: var(--button-hover-bg);
+  background-color: var(--gray-lighter);
+  font-weight: bolder;
 }
 
 .navbar-actions {
@@ -67,17 +56,17 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--light-text-color);
   padding: 10px;
   font-size: 1.5rem; 
-  background-color: var(--button-bg);
 }
 
 .navbar-actions button:hover {
-  background-color: var(--button-hover-bg);
+  background-color: var(--gray-lighter);
+  color: var(--text-color);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1120px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between; 
@@ -90,12 +79,31 @@
     display: flex;
     order: 2;
     padding: 10px 15px;
-    background-color: var(--button-bg);
     border-radius: 5px;
   }
 
+  .hamburger-menu.open {
+    background-color: var(--gray-lighter);
+  }
+  
+  .hamburger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--light-text-color);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-menu.open .bar {
+    background-color: var(--text-color);
+  }
+
   .hamburger-menu:hover{
-    background-color: var(--button-hover-bg);
+    background-color: var(--gray-lighter);
+  }
+
+  .hamburger-menu:hover .bar{
+    background-color: var(--text-color);
   }
 
   .navbar-actions {
@@ -112,13 +120,13 @@
     display: none; 
     flex-direction: column; 
     position: absolute;
-    top: 80px; 
+    top: 55px; 
+    margin-right: 20px;
     right: 0; 
     width: auto;
-    background-color: var(--bg-dark-color);
+    background-color: var(--gray-lighter);
     z-index: 10;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
 
   .navbar-menu.open {
@@ -126,20 +134,22 @@
   }
 
   .navbar-menu li {
-    margin: 10px 0; 
+    margin: 0px 0; 
   }
 
   .navbar-menu a {
+    display: block;
     text-decoration: none;
     color: var(--text-color);
-    padding: 10px 15px;
-    background-color: var(--button-bg);
-    border-radius: 5px;
+    padding: 10px 0px;
+    background-color: var(--gray-lighter);
+    border-radius: 0px;
     transition: background-color 0.3s ease;
+    width: 100%;
   }
   
   .navbar-menu a:hover {
     color: var(--text-color);
-    background-color: var(--button-hover-bg);
+    background-color: var(--gray-lightest);
   }
 }
