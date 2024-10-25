@@ -33,10 +33,10 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
         </Link>
       </div>
 
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
-        <span className={menuOpen ? 'bar open' : 'bar'}></span>
+      <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
 
       <ul className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
